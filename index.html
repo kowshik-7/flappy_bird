@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy bird</title>
+    <link rel="icon" href="./images/pngwing.com.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css">
+
+</head>
+<body>
+    <div data-scroll-container="" class="rollyscroll">
+        <section data-scroll-section="" class="container1">
+            <img data-scroll="" data-scroll-delay="0.8" data-scroll-speed="10" src="./images/pngwing.com.png" alt="Flappybird" id="flappyBird">
+            <img data-scroll="" data-scroll-delay="0.20" data-scroll-speed="1" src="./images/cloud.png" class="animate__animated animate__fadeInLeft" id="cloud1">
+            <img data-scroll="" data-scroll-delay="0.20" data-scroll-speed="1" src="./images/cloud.png" class="animate__animated animate__fadeInRight" id="cloud2">
+            <img data-scroll="" data-scroll-delay="0.20" data-scroll-speed="1.5" src="./images/name.png" class="animate__animated animate__fadeInUp" alt="image">
+        </section>
+        <section class="container2">
+
+        </section>
+    </div>
+    
+    <!-- <script src="https://unpkg.com/rolly.js@<VERSION>/dist/rolly.min.js"></script>
+    <script href="./app.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+        
+    <script>
+        const Locoscroll = new LocomotiveScroll({
+            el:document.querySelector("[data-scroll-container]"),
+            smooth:true,
+            smartphone:{
+                smooth:true
+            }
+        });
+    </script>
+</body>
+</html>
